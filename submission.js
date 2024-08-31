@@ -108,5 +108,5 @@ const scoreScrabble = function(str) {
          const score = values.reduce((acc, current) => acc + current, 0)
          return score;
       
-  }
+  
 };
