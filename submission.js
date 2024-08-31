@@ -35,24 +35,24 @@ const isPalindrome = function(str) {
 };
 
 const largestPair = function(array) {
- const sums = [];
-      let largestSum = 0;
+ const products = [];
+      let largestProduct = 0;
       for (i = 0; i < array.length; i++){
-          const sum = array[i] + array[i+1];
-          sums.push(sum)
-          if (sum > largestSum){
-              largestSum = sum;
+          const product = array[i] * array[i+1];
+          products.push(product)
+          if (product > largestProduct){
+              largestProduct = product;
           }
-      } return largestSum
+      } return largestProduct
 };
 
 const removeParenth = function(str) {
-   let stringArray = str.split("");
+    let stringArray = str.split(""); 
        const openParenth = stringArray.indexOf('(') 
-       let removed = stringArray.splice(openParenth, 1);
+      let removed = stringArray.splice(openParenth, 1);
        const closedParenth = stringArray.indexOf(')');
        removed = stringArray.splice(closedParenth, 1);
-       stringArray = stringArray.join("")
+      stringArray = stringArray.join("")
        return stringArray
 };
 
